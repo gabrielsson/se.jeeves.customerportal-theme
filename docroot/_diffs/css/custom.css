@@ -745,3 +745,202 @@ div#wrapper {
 		}
 	}
 }
+
+/*.portlet-dockbar {
+	display: none;
+}*/
+
+
+/**
+ * General
+ */
+.aui a {
+	color: #4DC10E;
+}
+
+.aui a:hover {
+	color: #4DC10E;
+}
+
+.aui .btn {
+	background: #4DC10E;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: none;
+	border: none;
+	box-shadow: none;
+}
+
+
+/**
+ * Header and navigation
+ */
+ 
+header {
+	background: #000;
+}
+ 
+.aui #navigation .navbar-inner {
+	background: none;
+}
+
+/* Taller header */
+.aui #navigation .navbar-inner .nav li {
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+.aui .navbar .icon-caret-down {
+	background: none;
+}
+
+.aui .modify-pages .lfr-nav-item .lfr-nav-child-toggle {
+	padding: 3px;
+}
+
+.aui #navigation .nav .dropdown-menu {
+	background: #000;
+}
+
+.aui #navigation .nav .dropdown-menu li > a {
+	padding: 8px 20px;
+}
+
+.aui #navigation .nav li.open > a {
+	background: none;
+	color: #4DC10E;
+}
+
+/* Logo height and centering */
+.aui #navigation .navbar-inner .nav .logo {
+	line-height: 50px;
+	height: 50px;
+	margin-right: 15px;
+}
+
+.aui #navigation .navbar-inner .nav .logo img {
+	height: 80%;
+}
+
+.aui #navigation .nav li.active > a {
+	background: none;
+	color: #4DC10E;
+}
+
+.aui #navigation .navbar-search {
+	padding: 4px 15px 5px;
+	margin: 0;
+}
+
+.aui #navigation .navbar-search .search-wrapper {
+	line-height: 50px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.aui #navigation .navbar-search .search-wrapper .input-append {
+	line-height: normal;
+	margin-bottom: 0;
+	border: 1px solid #444;
+}
+
+.aui #navigation .navbar-search .search-wrapper input {
+	margin: 0;
+	background: none;
+	color: #999;
+	border: 0;
+	font-size: 13px;
+}
+
+.aui #navigation .navbar-search input::-webkit-input-placeholder,
+.aui #navigation .navbar-search input:-moz-input-placeholder,
+.aui #navigation .navbar-search input::-moz-input-placeholder,
+.aui #navigation .navbar-search input:-ms-input-placeholder {
+	color: #666;
+}
+
+.aui #navigation .navbar-search .search-wrapper .btn {
+	background: none;
+	border: none;
+}
+
+
+
+/**
+ * User bar
+ */
+.user-bar {
+	background: #E6E6E6;
+	color: #333;
+	font-weight: 600;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+}
+
+.user-bar .user-full-name {
+	font-weight: 600;
+}
+
+.user-bar .user-full-name .name-wrapper {
+	margin-right: 10px;
+}
+
+/**
+ * Cart portlet
+ */
+.cart-portlet {
+	text-align: right;
+}
+
+.cart-portlet .icon-shopping-cart {
+	color: #4DC10E;
+	margin-right: 5px;
+}
+
+.cart-portlet .btn {
+	margin-left: 10px;
+}
+
+/**
+ * Breadcrumbs
+ */
+.aui .breadcrumb {
+	padding: 0;
+	margin: 15px 0;
+	background: none;
+	text-transform: uppercase;
+}
+
+.aui .breadcrumb li a, .aui .breadcrumb li.last a {
+	color: #999;
+}
+
+
+/**
+ * Category selector
+ */
+.aui .navbar .navbar-inner {
+	background: #F6F6F6;
+	box-shadow: none;
+	border-radius: 8px;
+	border: 1px solid #eee;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.aui .navbar .nav > li > a {
+	color: #555;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.aui .navbar .nav > .active > a, .aui .navbar .nav > .active > a:hover, .aui .navbar .nav > .active > a:focus {
+	box-shadow: none;
+	background: none;
+	color: #4DC10E;
+}
+
+.aui .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover {
+	color: #4DC10E;
+}
