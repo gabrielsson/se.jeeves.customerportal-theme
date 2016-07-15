@@ -70,18 +70,21 @@
 			
 			<form class="navbar-search pull-right">
 				<div class="search-wrapper">
-					<div class="input-append" id="yui_patched_v3_11_0_1_1468403760331_754">
+					#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))	
+					#set ($instanceId = $group_id + 'aaaaaaaaaaaa')
+					
+					#set ($searchPortletId = "customerportalsearch_WAR_sejeevescustomerportalportletscommonportlet_INSTANCE_${instanceId.substring(0, 12)}")
+					$theme.runtime($searchPortletId, '', $velocityPortletPreferences.toString())
+					#set ($VOID = $velocityPortletPreferences.reset())
+				</div>
+			</form>
+			<!--<div class="span4">
+			<div class="input-append" id="yui_patched_v3_11_0_1_1468403760331_754">
 						<input type="text" class="input input-large" value="" minlength="3" placeholder="Search products...">
 						<button type="button" class="btn"><i class="icon-search"></i></button>
 					</div>
-				</div>
-			</form>
-			<div class="span4">
-				#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))	
-				#set ($searchPortletId = "customerportalsearch_WAR_sejeevescustomerportalportletscommonportlet")
-				$theme.runtime($searchPortletId, '', $velocityPortletPreferences.toString())
-				#set ($VOID = $velocityPortletPreferences.reset())
-			</div>
+				
+			</div>-->
 		</div>
 	</div>
 </nav>
