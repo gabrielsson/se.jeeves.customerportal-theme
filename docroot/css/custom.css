@@ -746,9 +746,9 @@ div#wrapper {
 	}
 }
 
-/*.portlet-dockbar {
+.portlet-dockbar {
 	display: none;
-}*/
+}
 
 
 /**
@@ -784,10 +784,19 @@ header {
 	background: none;
 }
 
+.aui #navigation .navbar-inner .brand {
+	line-height: 50px;
+	padding: 4px 15px 5px;
+}
+
 /* Taller header */
 .aui #navigation .navbar-inner .nav li {
-	line-height: 50px;
+	line-height: 60px;
 	text-transform: uppercase;
+}
+
+.aui #navigation .navbar-inner .nav li > a {
+	padding: 0 10px;
 }
 
 .aui .navbar .icon-caret-down {
@@ -943,4 +952,88 @@ header {
 
 .aui .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover {
 	color: #4DC10E;
+}
+
+
+/**
+ * SEAT styling
+ */
+.aui a, .aui a:hover {
+	color: #D52A3A;
+}
+
+.aui .btn {
+	background: #D52A3A;
+}
+
+.aui .btn:hover, .aui .btn:focus {
+	background: #B62432;
+	color: #fff;
+}
+ 
+header {
+	background: #fff;
+}
+
+.aui #navigation .navbar-inner .brand {
+	line-height: 60px;
+	margin-right: 20px;
+	padding: 0;
+}
+
+.aui #navigation .navbar-inner .brand img {
+	height: 57px;
+}
+
+.aui #navigation .navbar-inner li {
+	margin-right: 5px;
+}
+
+.aui #navigation .navbar-inner li > a {
+	color: #333;
+}
+
+.aui #navigation .navbar-inner li > a > span {
+	font-size: 12px;
+}
+
+.aui #navigation .nav li.active > a, .aui #navigation .nav li.open > a {
+	color: #D52A3A;	
+}
+
+.aui .navbar .nav > .active > a, .aui .navbar .nav > .active > a:hover, .aui .navbar .nav > .active > a:focus {
+	color: #D52A3A;
+}
+
+.aui .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover {
+	color: #D52A3A;
+}
+
+.aui #navigation .navbar-search .search-wrapper .input-append {
+	border: 0;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.aui #navigation .navbar-search .search-wrapper .btn {
+	color: #D52A3A;
+	background: #E8E8E8;
+}
+
+.aui #navigation .navbar-search .search-wrapper input {
+	color: #999;
+	background: #E8E8E8;
+}
+
+.aui #navigation .navbar-search input::-webkit-input-placeholder,
+.aui #navigation .navbar-search input:-moz-input-placeholder,
+.aui #navigation .navbar-search input::-moz-input-placeholder,
+.aui #navigation .navbar-search input:-ms-input-placeholder {
+	color: #ccc;
+}
+
+
+.cart-portlet .icon-shopping-cart {
+	color: #D52A3A;
+	margin-right: 5px;
 }
