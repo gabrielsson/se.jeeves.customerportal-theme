@@ -746,9 +746,13 @@ div#wrapper {
 	}
 }
 
-.portlet-dockbar {
+
+/**
+ * Hides the dockbar
+ */
+/*.portlet-dockbar {
 	display: none;
-}
+}*/
 
 
 /**
@@ -769,6 +773,7 @@ div#wrapper {
 	text-shadow: none;
 	border: none;
 	box-shadow: none;
+	padding: 5px 12px;
 }
 
 
@@ -954,11 +959,62 @@ header {
 	color: #4DC10E;
 }
 
+.aui .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle {
+	box-shadow: none;
+	background-color: inherit;
+	color: #4DC10E;
+}
+
+.aui .dropdown-menu > li > a:hover, .aui .dropdown-menu > li > a:focus, .aui .dropdown-submenu:hover > a, .aui .dropdown-submenu:focus > a {
+	background-color: #4DC10E;
+	background-image: none;
+}
+
+/**
+ * Products grid
+ */
+.aui .thumbnail {
+	border: 0;
+	box-shadow: none;
+	margin-bottom: 50px;
+}
+
+.div-grid-row {
+	height: auto;
+}
+
+/* Clearfix */
+.div-grid-row:before {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.div-grid-row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+}
+
+.aui .thumbnail .image-wrapper {
+	height: 150px;
+}
+
+.aui .thumbnail img {
+	max-height: 150px;
+}
+
+.aui .thumbnail h3 {
+	font-size: 20px;
+	line-height: 1.2em;
+}
+
 
 /**
  * SEAT styling
  */
-.aui a, .aui a:hover {
+/*.aui a, .aui a:hover {
 	color: #D52A3A;
 }
 
@@ -1036,4 +1092,4 @@ header {
 .cart-portlet .icon-shopping-cart {
 	color: #D52A3A;
 	margin-right: 5px;
-}
+}*/
