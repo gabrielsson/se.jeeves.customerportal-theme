@@ -2,9 +2,7 @@
 @import "mixins";
 
 @import url(custom_common.css);
-@import url(color_schemes/common.css);
-@import url(color_schemes/dark.css);
-@import url(color_schemes/light.css);
+@import url(color_schemes/seat.css);
 
 $dockbarGradientEnd: #1273C7;
 $dockbarGradientStart: #118ADE;
@@ -773,7 +771,16 @@ div#wrapper {
 	text-shadow: none;
 	border: none;
 	box-shadow: none;
-	padding: 5px 12px;
+	padding: 4px 12px;
+}
+
+.aui .btn.dropdown-toggle {
+	background: #E8E8E8;
+	color: #333;
+}
+
+.aui .btn.dropdown-toggle span {
+	margin-right: 10px;
 }
 
 
@@ -829,7 +836,7 @@ header {
 .aui #navigation .navbar-inner .nav .logo {
 	line-height: 50px;
 	height: 50px;
-	margin-right: 15px;
+	margin-right: 5px;
 }
 
 .aui #navigation .navbar-inner .nav .logo img {
@@ -864,6 +871,7 @@ header {
 	color: #999;
 	border: 0;
 	font-size: 13px;
+	width: 100px;
 }
 
 .aui #navigation .navbar-search input::-webkit-input-placeholder,
@@ -970,6 +978,16 @@ header {
 	background-image: none;
 }
 
+.aui .navbar .nav li.dropdown.active > .dropdown-toggle {
+	background-color: initial;
+	color: #4DC10E;
+}
+
+.aui .navbar .nav li.dropdown.open > .dropdown-toggle, .aui .navbar .nav li.dropdown.active > .dropdown-toggle, .aui .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	background-color: initial;
+	color: #4DC10E;
+}
+
 /**
  * Products grid
  */
@@ -1010,86 +1028,38 @@ header {
 	line-height: 1.2em;
 }
 
+.aui .thumbnail input {
+	height: 18px;
+}
+
 
 /**
- * SEAT styling
+ * Products table
  */
-/*.aui a, .aui a:hover {
-	color: #D52A3A;
+.results-grid .results-header .col-2 a, .results-grid .results-header .col-3 a {
+	font-weight: bold;
+}
+  
+.results-grid .results-row .col-2 a {
+	color: #555;
 }
 
-.aui .btn {
-	background: #D52A3A;
-}
 
-.aui .btn:hover, .aui .btn:focus {
-	background: #B62432;
-	color: #fff;
-}
- 
-header {
-	background: #fff;
-}
+/**
+ * Pagination buttons
+ */
 
-.aui #navigation .navbar-inner .brand {
-	line-height: 60px;
-	margin-right: 20px;
-	padding: 0;
-}
-
-.aui #navigation .navbar-inner .brand img {
-	height: 57px;
-}
-
-.aui #navigation .navbar-inner li {
-	margin-right: 5px;
-}
-
-.aui #navigation .navbar-inner li > a {
-	color: #333;
-}
-
-.aui #navigation .navbar-inner li > a > span {
-	font-size: 12px;
-}
-
-.aui #navigation .nav li.active > a, .aui #navigation .nav li.open > a {
-	color: #D52A3A;	
-}
-
-.aui .navbar .nav > .active > a, .aui .navbar .nav > .active > a:hover, .aui .navbar .nav > .active > a:focus {
-	color: #D52A3A;
-}
-
-.aui .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover {
-	color: #D52A3A;
-}
-
-.aui #navigation .navbar-search .search-wrapper .input-append {
-	border: 0;
+.aui .pager li > a, .aui .pager li > span {
+	line-height: 1em;
+	padding: 5px 12px;
 	border-radius: 2px;
-	overflow: hidden;
 }
 
-.aui #navigation .navbar-search .search-wrapper .btn {
-	color: #D52A3A;
-	background: #E8E8E8;
+.aui .pager li.disabled > a, .aui .pager li.disabled > span {
+	color: #ececec;
+	border-color: #ececec;
 }
 
-.aui #navigation .navbar-search .search-wrapper input {
-	color: #999;
-	background: #E8E8E8;
+.taglib-page-iterator {
+	margin-top: 50px;
 }
-
-.aui #navigation .navbar-search input::-webkit-input-placeholder,
-.aui #navigation .navbar-search input:-moz-input-placeholder,
-.aui #navigation .navbar-search input::-moz-input-placeholder,
-.aui #navigation .navbar-search input:-ms-input-placeholder {
-	color: #ccc;
-}
-
-
-.cart-portlet .icon-shopping-cart {
-	color: #D52A3A;
-	margin-right: 5px;
-}*/
