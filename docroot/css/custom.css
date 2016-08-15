@@ -4,6 +4,10 @@
 @import url(custom_common.css);
 @import url(color_schemes/seat.css);
 
+$mainColor: #4DC10E;
+
+
+
 $dockbarGradientEnd: #1273C7;
 $dockbarGradientStart: #118ADE;
 
@@ -757,15 +761,15 @@ div#wrapper {
  * General
  */
 .aui a {
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 .aui a:hover {
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 .aui .btn {
-	background: #4DC10E;
+	background: $mainColor;
 	color: #fff;
 	text-transform: uppercase;
 	text-shadow: none;
@@ -829,7 +833,7 @@ header {
 
 .aui #navigation .nav li.open > a {
 	background: none;
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 /* Logo height and centering */
@@ -845,18 +849,18 @@ header {
 
 .aui #navigation .nav li.active > a {
 	background: none;
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 .aui #navigation .navbar-search {
-	padding: 4px 15px 5px;
+	padding: 0;
 	margin: 0;
 }
 
 .aui #navigation .navbar-search .search-wrapper {
-	line-height: 50px;
-	display: inline-block;
-	vertical-align: middle;
+	margin-right: 10px;
+	line-height: 60px;
+	float: left;
 }
 
 .aui #navigation .navbar-search .search-wrapper .input-append {
@@ -884,6 +888,22 @@ header {
 .aui #navigation .navbar-search .search-wrapper .btn {
 	background: none;
 	border: none;
+}
+
+/* Language picker */
+.aui #navigation .navbar-inner .taglib-language-list-text {
+	color: #000;
+	padding: 0 5px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.aui #navigation .navbar-inner a.taglib-language-list-text {
+	color: $mainColor;
+}
+
+.aui #navigation .navbar-inner .taglib-language-list-text.last {
+	margin-left: -4px;
 }
 
 
@@ -916,7 +936,7 @@ header {
 }
 
 .cart-portlet .icon-shopping-cart {
-	color: #4DC10E;
+	color: $mainColor;
 	margin-right: 5px;
 }
 
@@ -960,32 +980,32 @@ header {
 .aui .navbar .nav > .active > a, .aui .navbar .nav > .active > a:hover, .aui .navbar .nav > .active > a:focus {
 	box-shadow: none;
 	background: none;
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 .aui .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover {
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 .aui .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle {
 	box-shadow: none;
 	background-color: inherit;
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 .aui .dropdown-menu > li > a:hover, .aui .dropdown-menu > li > a:focus, .aui .dropdown-submenu:hover > a, .aui .dropdown-submenu:focus > a {
-	background-color: #4DC10E;
+	background-color: $mainColor;
 	background-image: none;
 }
 
 .aui .navbar .nav li.dropdown.active > .dropdown-toggle {
 	background-color: initial;
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 .aui .navbar .nav li.dropdown.open > .dropdown-toggle, .aui .navbar .nav li.dropdown.active > .dropdown-toggle, .aui .navbar .nav li.dropdown.open.active > .dropdown-toggle {
 	background-color: initial;
-	color: #4DC10E;
+	color: $mainColor;
 }
 
 /**
@@ -1036,7 +1056,7 @@ header {
 	line-height: 1em;
 	padding: 6px 10px;
 	color: #fff;
-	background: #4DC10E;
+	background: $mainColor;
 	margin: 0;
 }
 
@@ -1112,3 +1132,75 @@ header {
 .taglib-page-iterator {
 	margin-top: 50px;
 }
+
+
+/**
+ * Single product
+ */
+.aui .hero-unit {
+	background: #fafafa;
+}
+
+.aui .single-product .product-details-wrapper{
+	height: 450px;
+	position: relative;
+}
+
+.aui .single-product .buyBox {
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+}
+ 
+.aui .single-product .close-product-button {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	text-transform: uppercase;
+	color: #999;
+	font-size: 16px;
+}
+
+.aui .single-product .close-product-button:hover {
+	text-decoration: none;
+}
+
+.aui .single-product .product-title {
+	color: #000;
+	font-size: 26px;
+	line-height: 1.3em;
+	margin-bottom: 15px;
+}
+
+.aui .single-product .price-wrapper {
+	margin-bottom: 20px;
+}
+
+.aui .single-product .price {
+	display: inline-block;
+	font-size: 1.3em;
+	line-height: 1em;
+	padding: 6px 10px;
+	color: #fff;
+	background: $mainColor;
+	margin: 0;
+}
+
+.aui .single-product .product-item-number {
+	margin-bottom: 0;
+}
+
+.aui .single-product .product-stock-wrapper {
+	margin-bottom: 20px;
+}
+
+.aui .single-product table {
+	width: 100%;
+	text-align: right;
+}
+
+.aui .single-product table input {
+	height: 18px;
+	margin: 0;
+}
+

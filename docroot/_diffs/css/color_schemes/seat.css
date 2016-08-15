@@ -1,12 +1,15 @@
 /**
  * SEAT styling
  */
-.aui .seat a, .aui a:hover {
-	color: #D52A3A;
+$redColor: #D52A3A;
+ 
+ 
+.aui .seat a, .aui .seat a:hover {
+	color: $redColor;
 }
 
 .aui .seat .btn {
-	background: #D52A3A;
+	background: $redColor;
 	color: #fff;
 }
 
@@ -52,18 +55,24 @@
 
 .aui .seat #navigation .nav li.active > a,
 .aui .seat #navigation .nav li.open > a {
-	color: #D52A3A;	
+	color: $redColor;	
 }
 
 .aui .seat .navbar .nav > .active > a,
 .aui .seat .navbar .nav > .active > a:hover,
 .aui .seat .navbar .nav > .active > a:focus {
-	color: #D52A3A;
+	color: $redColor;
 }
 
 .aui .seat .navbar .nav > li > a:focus,
 .aui .seat .navbar .nav > li > a:hover {
-	color: #D52A3A;
+	color: $redColor;
+}
+
+.aui .seat #navigation .dropdown-menu li > a,
+.aui .seat #navigation .dropdown-menu li.active > a,
+.aui .seat #navigation .dropdown-menu li.open > a {
+	color: #fff;
 }
 
 .aui .seat #navigation .navbar-search .search-wrapper .input-append {
@@ -73,7 +82,7 @@
 }
 
 .aui .seat #navigation .navbar-search .search-wrapper .btn {
-	color: #D52A3A;
+	color: $redColor;
 	background: #E8E8E8;
 }
 
@@ -99,22 +108,29 @@
 .aui .seat .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover,
 .aui .seat .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle,
 .aui .seat .navbar .nav li.dropdown.active > .dropdown-toggle {
-	color: #D52A3A;
+	color: $redColor;
 }
 
 .aui .seat .dropdown-menu > li > a:hover,
 .aui .seat .dropdown-menu > li > a:focus,
 .aui .seat .dropdown-submenu:hover > a,
 .aui .seat .dropdown-submenu:focus > a {
-	background-color: #D52A3A;
+	background-color: $redColor;
 }
 
+.aui .seat #navigation .navbar-inner a.taglib-language-list-text {
+	color: $redColor;
+}
 
 .seat .cart-portlet .icon-shopping-cart {
-	color: #D52A3A;
+	color: $redColor;
 	margin-right: 5px;
 }
 
 .aui .seat .thumbnail .product-price {
-	background: #D52A3A;
+	background: $redColor;
+}
+
+.aui .seat .single-product .price {
+	background: $redColor;
 }

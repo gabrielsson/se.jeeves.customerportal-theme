@@ -61,7 +61,7 @@
 			<ul class="nav pull-right">
 				<li class="$nav_item_css_class">
 					#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))	
-					#set ($VOID = $velocityPortletPreferences.setValue('displayStyle', '3'))						
+					#set ($VOID = $velocityPortletPreferences.setValue('displayStyle', '2'))						
 					#set ($langPortletId = "82")
 					$theme.runtime($langPortletId, '', $velocityPortletPreferences.toString())
 					#set ($VOID = $velocityPortletPreferences.reset())

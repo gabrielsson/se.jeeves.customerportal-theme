@@ -46,7 +46,7 @@ pageContext.setAttribute("downloadPath", downloadPath);
 <portlet:actionURL var="backActionURL">
 	<portlet:param name="action" value="backAction" />
 </portlet:actionURL>
-<a href="${backActionURL}" class="close-product-button">Stäng <i class="icon-remove"></i></a>
+<a href="${backActionURL}" class="close-product-button">Close <i class="icon-remove"></i></a>
 <c:if test="${fn:length(item.packageItems)>1}">
 	<div onMouseOut="document.getElementById('popup').style.display='none';" onMouseOver="document.getElementById('popup').style.display='block';">
 			<button class="btn btn-primary icon-info"></button>
@@ -85,7 +85,7 @@ pageContext.setAttribute("downloadPath", downloadPath);
 </div>
 <div class="row">
 	
-<div class="span6">
+<div class="span6 product-images-wrapper">
 	<c:if test="${not empty imagePath}">
 		<c:set value="<portlet:namespace/>_img" var="imageId" />
 			<div id="imageViewer" >
@@ -100,8 +100,8 @@ pageContext.setAttribute("downloadPath", downloadPath);
 	</c:if>
 </div>
 	
-<div class="span6">
-<div><h2 class="product-title">${item.description}</h2></div>
+<div class="span6 product-details-wrapper">
+<h2 class="product-title">${item.description}</h2>
 
 <p class="price-wrapper">
 	<c:if test="${not empty priceMap}">
@@ -110,7 +110,7 @@ pageContext.setAttribute("downloadPath", downloadPath);
 			
 				<div onMouseOver="document.getElementById('popupitem.getItemNumber()').style.display='block';"
 					onMouseOut="document.getElementById('popupitem.getItemNumber()').style.display='none';" />
-					EUR ${priceMap[item.itemNumber]} 
+					${priceMap[item.itemNumber]} SEK
 						<button class="btn btn-primary icon-info"></button>
 				</div>
 				
@@ -123,11 +123,11 @@ pageContext.setAttribute("downloadPath", downloadPath);
 	</c:if>
 </p>
 
-<div><p class="product-item-number">
-<spring:message code="itemlist-VIEW-article-itemnumber-STRING" text="Item no" /> ${item.itemNumber}
-</p></div>
+<p class="product-item-number">
+<b><spring:message code="itemlist-VIEW-article-itemnumber-STRING" text="Item no" />:</b> ${item.itemNumber}
+</p>
 
-<p>
+<p class="product-stock-wrapper">
 	<c:if test="${1 <= item.webpublish && item.webpublish < 3 && showPrice}">
 		
 
@@ -188,8 +188,7 @@ pageContext.setAttribute("downloadPath", downloadPath);
 
 
 <c:if test="${1 <= item.webpublish && item.webpublish < 3}">
-	
-	<span class="quantity"><spring:message code="itemlist-VIEW-in-stock-STRING" text="In stock***"></spring:message> : ${stockMap[item.itemNumber]} ${item.unit}</span>
+	<b><span class="quantity"><spring:message code="itemlist-VIEW-in-stock-STRING" text="In stock***"></spring:message>:</b> ${stockMap[item.itemNumber]} ${item.unit}</span>
 </c:if>
 
 <c:if test="${not empty downloadPath}">
@@ -212,9 +211,8 @@ pageContext.setAttribute("downloadPath", downloadPath);
 </p>
 
 <p>
-<b><spring:message code="itemlist-VIEW-article-specification-STRING" text="Specification***" /></b><br>
 <c:if test="${not empty item.specification}">
-
+	<b><spring:message code="itemlist-VIEW-article-specification-STRING" text="Specification***" /></b><br>
 	${item.specification}
 </c:if>
 </p>
