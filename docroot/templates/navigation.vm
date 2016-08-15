@@ -60,11 +60,11 @@
 			
 			<ul class="nav pull-right">
 				<li class="$nav_item_css_class">
-					<a href="$site_default_url"><span>My sites <span class="lfr-nav-child-toggle"><i class="icon-caret-down"></i></span></span></a>
-				</li>
-				
-				<li class="$nav_item_css_class">
-					<a href="$site_default_url"><span>Languages <span class="lfr-nav-child-toggle"><i class="icon-caret-down"></i></span></span></a>
+					#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))	
+					#set ($VOID = $velocityPortletPreferences.setValue('displayStyle', '3'))						
+					#set ($langPortletId = "82")
+					$theme.runtime($langPortletId, '', $velocityPortletPreferences.toString())
+					#set ($VOID = $velocityPortletPreferences.reset())
 				</li>
 			</ul>
 			

@@ -994,7 +994,15 @@ header {
 .aui .thumbnail {
 	border: 0;
 	box-shadow: none;
+	margin: 0;
 	margin-bottom: 50px;
+	position: relative;
+	background: #fafafa;
+	padding: 0;
+}
+
+.aui .thumbnail .caption {
+	padding: 15px;
 }
 
 .div-grid-row {
@@ -1016,16 +1024,57 @@ header {
 }
 
 .aui .thumbnail .image-wrapper {
-	height: 150px;
+	height: 180px;
+	text-align: center;
+}
+
+.aui .thumbnail .product-price {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	font-size: 1.3em;
+	line-height: 1em;
+	padding: 6px 10px;
+	color: #fff;
+	background: #4DC10E;
+	margin: 0;
+}
+
+.aui .thumbnail .product-title {
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.2em;
+	margin-bottom: 3px;
+}
+
+.aui .thumbnail .product-title a {
+	font-weight: bold;
+	color: #000;
+}
+
+.aui .thumbnail .product-stock {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.aui .thumbnail .product-description {
+	font-size: 14px;
+}
+
+.aui .thumbnail .product-add-to-cart {
+	position: absolute;
+	margin: 0;
+	right: 15px;
+	bottom: 15px;
+}
+
+.aui .thumbnail .product-add-to-cart input {
+	margin: 0;
 }
 
 .aui .thumbnail img {
-	max-height: 150px;
-}
-
-.aui .thumbnail h3 {
-	font-size: 20px;
-	line-height: 1.2em;
+	max-height: 180px;
+	max-width: 100%;
 }
 
 .aui .thumbnail input {
