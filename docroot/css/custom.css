@@ -1033,8 +1033,13 @@ header {
 .aui .breadcrumb {
 	padding: 0;
 	margin: 15px 0;
+	margin-bottom: 0;
 	background: none;
 	text-transform: uppercase;
+}
+
+.aui #breadcrumbs {
+	margin-bottom: 20px;
 }
 
 .aui .breadcrumb li a, .aui .breadcrumb li.last a {
