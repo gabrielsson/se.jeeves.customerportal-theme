@@ -5,6 +5,7 @@
 @import url(color_schemes/seat.css);
 
 $mainColor: #4DC10E;
+$darkMain: #46AA0C;
 
 
 
@@ -760,6 +761,10 @@ div#wrapper {
 /**
  * General
  */
+.aui h1, .aui h2, .aui h3 {
+	color: #333;
+}
+ 
 .aui a {
 	color: $mainColor;
 }
@@ -778,6 +783,11 @@ div#wrapper {
 	padding: 4px 12px;
 }
 
+.aui .btn:hover, .aui .btn-primary:hover, .aui .btn:active, .aui .btn-primary:active {
+	background: $darkMain;
+	color: #fff;
+}
+
 .aui .btn.dropdown-toggle {
 	background: #E8E8E8;
 	color: #333;
@@ -787,6 +797,75 @@ div#wrapper {
 	margin-right: 10px;
 }
 
+.aui .form-actions {
+	text-align: right;
+	background-color: transparent;
+}
+
+.aui legend {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #333;
+}
+
+.aui select, .aui input[type="text"], .aui textarea {
+	height: auto;
+	box-sizing: border-box;
+	width: auto;
+	max-width: 100%;
+	padding: 6px;
+}
+
+.aui select {
+	height: 30px;
+}
+
+.aui input[type="text"], .aui textarea {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.aui input[type="text"] {
+	margin: 0;
+	color: #999;
+	font-size: 13px;
+}
+
+.aui input[type="text"]:disabled, .aui select:disabled {
+	background: #fafafa;
+	color: #ccc;
+	border-color: #ececec;
+}
+
+.aui .input-append input[type="text"] {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	height: auto;
+	padding: 3px 6px;
+}
+
+
+.aui .portlet-content {
+	border: 0;
+	padding: 15px 0;
+}
+
+.aui .portlet-topper {
+	background: transparent;
+}
+
+.aui .portlet-topper .portlet-title {
+	padding-left: 0;
+	font-size: 1.2em;
+	line-height: 1em;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.aui .button-holder {
+	margin-top: 0;
+}
 
 /**
  * Header and navigation
@@ -813,6 +892,10 @@ header {
 
 .aui #navigation .navbar-inner .nav li > a {
 	padding: 0 10px;
+}
+
+.aui #navigation .navbar-inner li > a > span {
+	font-size: 12px;
 }
 
 .aui .navbar .icon-caret-down {
@@ -892,10 +975,10 @@ header {
 
 /* Language picker */
 .aui #navigation .navbar-inner .taglib-language-list-text {
-	color: #000;
 	padding: 0 5px;
 	font-size: 12px;
 	font-weight: bold;
+	color: #fff;
 }
 
 .aui #navigation .navbar-inner a.taglib-language-list-text {
@@ -1056,7 +1139,7 @@ header {
 	line-height: 1em;
 	padding: 6px 10px;
 	color: #fff;
-	background: $mainColor;
+	background: #555;
 	margin: 0;
 }
 
@@ -1204,3 +1287,49 @@ header {
 	margin: 0;
 }
 
+
+/**
+ * Checkout cart
+ */
+.order-info {
+	margin-top: 60px;
+}
+
+.aui .table {
+	border-radius: 2px;
+    border: 1px solid #ddd;
+    overflow: visible;
+}
+
+.aui .table th, .aui .table td {
+	padding: 12px;
+}
+
+.aui .table td {
+	background-color: #fafafa;
+}
+
+.aui .table-striped tbody > tr:nth-child(odd) > td, .aui .table-striped tbody > tr:nth-child(odd) > th {
+	background-color: #fafafa;
+}
+
+.aui .table-striped tbody > tr:first-child > td, .aui .table-striped tbody > tr:first-child > th {
+	background-color: #fff;
+}
+
+.aui .results-grid .table {
+	margin-bottom: 0;
+}
+
+.cart-total-wrapper {
+	clear: both;
+	border: 1px solid #ddd;
+	border-top: 0;
+	padding: 12px;
+}
+
+.cart-total-wrapper h2 {
+	margin: 0;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}

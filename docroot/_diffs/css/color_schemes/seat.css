@@ -17,6 +17,22 @@ $redColor: #D52A3A;
 	background: #B62432;
 	color: #fff;
 }
+
+.aui .seat input[type="text"], .aui .seat textarea {
+	background: #E8E8E8;
+	border-radius: 2px;
+	border: 0;
+}
+
+.aui .seat input[type="text"]:disabled, .aui .seat select:disabled {
+	background: #fafafa;
+	color: #aaa;
+	border: 0;
+}
+
+.aui .seat .input-append input[type="text"] {
+	padding: 4px 6px;
+}
  
 .seat header {
 	background: #fff;
@@ -89,6 +105,7 @@ $redColor: #D52A3A;
 .aui .seat #navigation .navbar-search .search-wrapper input {
 	color: #999;
 	background: #E8E8E8;
+	padding: 4px 6px;
 }
 
 .aui .seat #navigation .navbar-search input::-webkit-input-placeholder,
@@ -127,10 +144,10 @@ $redColor: #D52A3A;
 	margin-right: 5px;
 }
 
-.aui .seat .thumbnail .product-price {
+.aui .seat .single-product .price {
 	background: $redColor;
 }
 
-.aui .seat .single-product .price {
-	background: $redColor;
+.aui .seat #navigation .navbar-inner .taglib-language-list-text {
+	color: #000;
 }
