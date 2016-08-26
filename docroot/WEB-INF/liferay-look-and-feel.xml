@@ -11,11 +11,20 @@
 		</settings>
 		
 		<color-scheme id="01" name="Normal">
-	        <default-cs>true</default-cs>
-	        <css-class>default</css-class>
+			<default-cs>true</default-cs>
+			<css-class>default</css-class>
 		</color-scheme>
-	    <color-scheme id="02" name="SEAT">
-	        <css-class>seat</css-class>
-	    </color-scheme>
+		<color-scheme id="02" name="SEAT">
+			<css-class>seat</css-class>
+		</color-scheme>
+		<color-scheme id="03" name="Skoda">
+			<css-class>skoda</css-class>
+		</color-scheme>
+		<color-scheme id="04" name="Volvo Trucks">
+			<css-class>volvo-trucks</css-class>
+		</color-scheme>
+		<color-scheme id="05" name="Volvo Cars">
+			<css-class>volvo-cars</css-class>
+		</color-scheme>
 	</theme>
 </look-and-feel>
