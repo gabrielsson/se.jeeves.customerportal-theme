@@ -1,0 +1,153 @@
+/**
+ * SEAT styling
+ */
+/*#4ba82e: #4ba82e;*/
+ 
+ 
+.aui .skoda a, .aui .skoda a:hover {
+	color: #4ba82e;
+}
+
+.aui .skoda .btn {
+	background: #4ba82e;
+	color: #fff;
+}
+
+.aui .skoda .btn:hover, .aui .btn:focus {
+	background: #B62432;
+	color: #fff;
+}
+
+.aui .skoda input[type="text"], .aui .skoda textarea {
+	background: #E8E8E8;
+	border-radius: 2px;
+	border: 0;
+}
+
+.aui .skoda input[type="text"]:disabled, .aui .skoda select:disabled {
+	background: #fafafa;
+	color: #aaa;
+	border: 0;
+}
+
+.aui .skoda .input-append input[type="text"] {
+	padding: 4px 6px;
+}
+ 
+.skoda header {
+	background: #fff;
+}
+
+.aui .skoda #navigation .navbar-inner .nav .logo {
+	line-height: 60px;
+	height: 60px;
+}
+
+.aui .skoda #navigation .navbar-inner .nav .logo img {
+	height: 100%;
+}
+
+/*.aui #navigation .navbar-inner .brand {
+	line-height: 60px;
+	margin-right: 20px;
+	padding: 0;
+}
+
+.aui #navigation .navbar-inner .brand img {
+	height: 57px;
+}*/
+
+.aui .skoda #navigation .navbar-inner li {
+	margin-right: 5px;
+}
+
+.aui .skoda #navigation .navbar-inner li > a {
+	color: #333;
+}
+
+.aui .skoda #navigation .navbar-inner li > a > span {
+	font-size: 12px;
+}
+
+.aui .skoda #navigation .nav li.active > a,
+.aui .skoda #navigation .nav li.open > a {
+	color: #4ba82e;	
+}
+
+.aui .skoda .navbar .nav > .active > a,
+.aui .skoda .navbar .nav > .active > a:hover,
+.aui .skoda .navbar .nav > .active > a:focus {
+	color: #4ba82e;
+}
+
+.aui .skoda .navbar .nav > li > a:focus,
+.aui .skoda .navbar .nav > li > a:hover {
+	color: #4ba82e;
+}
+
+.aui .skoda #navigation .dropdown-menu li > a,
+.aui .skoda #navigation .dropdown-menu li.active > a,
+.aui .skoda #navigation .dropdown-menu li.open > a {
+	color: #fff;
+}
+
+.aui .skoda #navigation .navbar-search .search-wrapper .input-append {
+	border: 0;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.aui .skoda #navigation .navbar-search .search-wrapper .btn {
+	color: #4ba82e;
+	background: #E8E8E8;
+}
+
+.aui .skoda #navigation .navbar-search .search-wrapper input {
+	color: #999;
+	background: #E8E8E8;
+	padding: 4px 6px;
+}
+
+.aui .skoda #navigation .navbar-search input::-webkit-input-placeholder,
+.aui .skoda #navigation .navbar-search input:-moz-input-placeholder,
+.aui .skoda #navigation .navbar-search input::-moz-input-placeholder,
+.aui .skoda #navigation .navbar-search input:-ms-input-placeholder {
+	color: #ccc;
+}
+
+
+.aui .skoda .navbar .nav > .active > a,
+.aui .skoda .navbar .nav > .active > a:hover,
+.aui .skoda .navbar .nav > .active > a:focus,
+.aui .skoda .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .skoda .navbar .nav li.dropdown.active > .dropdown-toggle,
+.aui .skoda .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.aui .skoda .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover,
+.aui .skoda .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .skoda .navbar .nav li.dropdown.active > .dropdown-toggle {
+	color: #4ba82e;
+}
+
+.aui .skoda .dropdown-menu > li > a:hover,
+.aui .skoda .dropdown-menu > li > a:focus,
+.aui .skoda .dropdown-submenu:hover > a,
+.aui .skoda .dropdown-submenu:focus > a {
+	background-color: #4ba82e;
+}
+
+.aui .skoda #navigation .navbar-inner a.taglib-language-list-text {
+	color: #4ba82e;
+}
+
+.skoda .cart-portlet .icon-shopping-cart {
+	color: #4ba82e;
+	margin-right: 5px;
+}
+
+.aui .skoda .single-product .price {
+	background: #4ba82e;
+}
+
+.aui .skoda #navigation .navbar-inner .taglib-language-list-text {
+	color: #000;
+}
