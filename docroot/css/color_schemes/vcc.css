@@ -1,0 +1,135 @@
+/**
+ * Volvo Trucks styling
+ */
+$blueColor: #003057;
+
+@font-face {
+	font-family: 'Volvo Sans';
+	src: url(../VolvoSansWeb-Regular.woff);
+}
+
+@font-face {
+	font-family: 'Volvo Sans';
+	font-weight: bold;
+	src: url(../VolvoSansWeb-Medium.woff);
+}
+
+.aui body.volvo-cars {
+	font-family: 'Volvo Sans',sans-serif;
+}
+ 
+.aui .volvo-cars a, .aui .volvo-cars a:hover {
+	color: $blueColor;
+}
+
+.aui .volvo-cars .btn {
+	background: $blueColor;
+	color: #fff;
+	text-transform: none;
+	border-radius: 0;
+}
+
+.aui .volvo-cars .btn.btn-chevron:after {
+	font-size: 6px;
+	margin: 0;
+	margin-left: 10px;
+	color: #fff;
+	opacity: 0.7;
+	content: '\f054';
+	font-family: 'fontawesome-alloy';
+	text-decoration: inherit;
+    display: inline-block;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+.aui .volvo-cars .btn:hover, .aui .btn:focus {
+	background: #69879D;
+	color: #fff;
+}
+
+.aui .volvo-cars #navigation .navbar-inner .nav li > a {
+	padding: 0 15px;
+	position: relative;
+}
+
+.aui .volvo-cars #navigation .navbar-inner li > a > span {
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+.aui .volvo-cars #navigation .nav li.active > a {
+	color: #517891;
+}
+
+.aui .volvo-cars #navigation .nav li.active > a > span {
+	font-weight: bold;
+	color: #517891;
+}
+
+.aui .volvo-cars #navigation .nav li.hover > a {
+	color: #fff;
+}
+
+.aui .volvo-cars #navigation .nav li.hover > a:after {
+	content: '';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: white;
+}
+
+.aui .volvo-cars #navigation .nav li.open > a {
+	color: #517891;
+}
+
+.aui .volvo-cars .navbar .nav > .active > a,
+.aui .volvo-cars .navbar .nav > .active > a:hover,
+.aui .volvo-cars .navbar .nav > .active > a:focus {
+	color: #fff;
+}
+
+.aui .volvo-cars .navbar .nav > li > a:focus,
+.aui .volvo-cars .navbar .nav > li > a:hover {
+	color: #517891;
+}
+
+.aui .volvo-cars #navigation .navbar-search input::-webkit-input-placeholder,
+.aui .volvo-cars #navigation .navbar-search input:-moz-input-placeholder,
+.aui .volvo-cars #navigation .navbar-search input::-moz-input-placeholder,
+.aui .volvo-cars #navigation .navbar-search input:-ms-input-placeholder {
+	color: #ccc;
+}
+
+
+.aui .volvo-cars .navbar .nav > .active > a,
+.aui .volvo-cars .navbar .nav > .active > a:hover,
+.aui .volvo-cars .navbar .nav > .active > a:focus,
+.aui .volvo-cars .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .volvo-cars .navbar .nav li.dropdown.active > .dropdown-toggle,
+.aui .volvo-cars .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.aui .volvo-cars .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover,
+.aui .volvo-cars .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .volvo-cars .navbar .nav li.dropdown.active > .dropdown-toggle {
+	color: $blueColor;
+	color: #517891;
+}
+
+.aui .volvo-cars .dropdown-menu > li > a:hover,
+.aui .volvo-cars .dropdown-menu > li > a:focus,
+.aui .volvo-cars .dropdown-submenu:hover > a,
+.aui .volvo-cars .dropdown-submenu:focus > a {
+	background-color: $blueColor;
+}
+
+.aui .volvo-cars #navigation .navbar-inner a.taglib-language-list-text {
+	color: #517891;
+}
+
+.volvo-cars .cart-portlet .icon-shopping-cart {
+	color: $blueColor;
+	margin-right: 5px;
+}

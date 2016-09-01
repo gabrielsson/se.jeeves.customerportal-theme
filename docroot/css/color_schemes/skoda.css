@@ -1,20 +1,51 @@
 /**
  * SEAT styling
  */
-/*#4ba82e: #4ba82e;*/
+/*$greenColor: $greenColor;*/
+$greenColor: #4ba82e;
  
+@font-face {
+	font-family: 'Skoda Pro';
+	src: url(../SkodaPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Skoda Pro';
+	font-weight: bold;
+	src: url(../SkodaPro-Bold.ttf);
+}
+
+.aui body.skoda {
+	font-family: "Skoda Pro", sans-serif;
+}
  
 .aui .skoda a, .aui .skoda a:hover {
-	color: #4ba82e;
+	color: $greenColor;
 }
 
 .aui .skoda .btn {
-	background: #4ba82e;
+	background: $greenColor;
 	color: #fff;
+	text-transform: none;
+	border-radius: 0;
+}
+
+.aui .skoda .btn.btn-chevron:after {
+	font-size: 6px;
+	margin: 0;
+	margin-left: 10px;
+	color: #fff;
+	opacity: 0.7;
+	content: '\f054';
+	font-family: 'fontawesome-alloy';
+	text-decoration: inherit;
+    display: inline-block;
+    margin-top: -2px;
+    vertical-align: middle;
 }
 
 .aui .skoda .btn:hover, .aui .btn:focus {
-	background: #B62432;
+	background: #439429;
 	color: #fff;
 }
 
@@ -44,7 +75,7 @@
 }
 
 .aui .skoda #navigation .navbar-inner .nav .logo img {
-	height: 100%;
+	height: 60%;
 }
 
 /*.aui #navigation .navbar-inner .brand {
@@ -71,18 +102,18 @@
 
 .aui .skoda #navigation .nav li.active > a,
 .aui .skoda #navigation .nav li.open > a {
-	color: #4ba82e;	
+	color: $greenColor;	
 }
 
 .aui .skoda .navbar .nav > .active > a,
 .aui .skoda .navbar .nav > .active > a:hover,
 .aui .skoda .navbar .nav > .active > a:focus {
-	color: #4ba82e;
+	color: $greenColor;
 }
 
 .aui .skoda .navbar .nav > li > a:focus,
 .aui .skoda .navbar .nav > li > a:hover {
-	color: #4ba82e;
+	color: $greenColor;
 }
 
 .aui .skoda #navigation .dropdown-menu li > a,
@@ -98,7 +129,7 @@
 }
 
 .aui .skoda #navigation .navbar-search .search-wrapper .btn {
-	color: #4ba82e;
+	color: $greenColor;
 	background: #E8E8E8;
 }
 
@@ -125,27 +156,27 @@
 .aui .skoda .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover,
 .aui .skoda .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle,
 .aui .skoda .navbar .nav li.dropdown.active > .dropdown-toggle {
-	color: #4ba82e;
+	color: $greenColor;
 }
 
 .aui .skoda .dropdown-menu > li > a:hover,
 .aui .skoda .dropdown-menu > li > a:focus,
 .aui .skoda .dropdown-submenu:hover > a,
 .aui .skoda .dropdown-submenu:focus > a {
-	background-color: #4ba82e;
+	background-color: $greenColor;
 }
 
 .aui .skoda #navigation .navbar-inner a.taglib-language-list-text {
-	color: #4ba82e;
+	color: $greenColor;
 }
 
 .skoda .cart-portlet .icon-shopping-cart {
-	color: #4ba82e;
+	color: $greenColor;
 	margin-right: 5px;
 }
 
 .aui .skoda .single-product .price {
-	background: #4ba82e;
+	background: $greenColor;
 }
 
 .aui .skoda #navigation .navbar-inner .taglib-language-list-text {
