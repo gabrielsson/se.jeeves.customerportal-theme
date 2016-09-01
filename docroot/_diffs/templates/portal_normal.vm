@@ -78,10 +78,14 @@ $theme.include($body_top_include)
 		</div>
 	</div>
 
-	<footer id="footer" role="contentinfo">
-		<p class="powered-by">
-			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
-		</p>
+	<footer id="footer">
+		#set ($VOID = $velocityPortletPreferences.setValue('groupId', $themeDisplay.getScopeGroupId().toString()))
+		#set ($VOID = $velocityPortletPreferences.setValue('articleId', $theme.getSetting('footer-article-id')))
+		#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
+		#set ($portlet_id = '56')
+		#set ($my_portlet_id = "${portlet_id}_INSTANCE_1234")
+		$theme.runtime($my_portlet_id, "", $velocityPortletPreferences.toString())
+		$velocityPortletPreferences.reset()
 	</footer>
 </div>
 
