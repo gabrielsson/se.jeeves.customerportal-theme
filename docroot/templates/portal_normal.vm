@@ -34,6 +34,7 @@ $theme.include($body_top_include)
 	</header>
 
 	<div id="content">
+		#if ($is_signed_in)
 		<div class="user-bar">
 			<div class="container">
 				<div class="row">
@@ -63,12 +64,16 @@ $theme.include($body_top_include)
 			</div>
 			</div>
 		</div>
+		#end
 		
+		#if ($is_signed_in)
 		<nav id="breadcrumbs">
 			<div class="container">
 				#breadcrumbs()
 			</div>
 		</nav>
+		#end
+		
 		<div class="container">
 			#if ($selectable)
 				$theme.include($content_include)
@@ -82,10 +87,14 @@ $theme.include($body_top_include)
 		</div>
 	</div>
 
-	<footer id="footer" role="contentinfo">
-		<p class="powered-by">
-			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
-		</p>
+	<footer id="footer" class="clearfix" role="contentinfo">
+		<div class="footer-left">
+			Brigo AB, Ruskvädersgatan 6, 418 34, Göteborg, Sweden
+		</div>
+		
+		<div class="footer-right">
+			Telephone: +46(0)31 89 18 00, Telefax: +46(0)31 89 18 01, E-mail: info@brigo.se
+		</div>
 	</footer>
 </div>
 

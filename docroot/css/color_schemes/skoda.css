@@ -182,3 +182,91 @@ $greenColor: #4ba82e;
 .aui .skoda #navigation .navbar-inner .taglib-language-list-text {
 	color: #000;
 }
+
+/**
+ * Skoda login page
+ */
+#embedded-welcome-portlet {
+	background-size: cover;
+	background-position: center center;
+}
+ 
+.skoda-login-wrapper {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	padding: 80px 10px;
+}
+
+.skoda-login-wrapper .logo {
+	margin-bottom: 20px;
+}
+
+.aui .skoda-login-wrapper h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 2em;
+}
+
+.aui .skoda-login-wrapper p {
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+.skoda-login-wrapper .sign-in-form {
+	text-align: left;
+	max-width: 200px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.skoda-login-wrapper .navigation {
+	display: none;
+}
+
+.aui .skoda-login-wrapper .sign-in-form .control-group {
+	margin-bottom: 10px;
+}
+
+.aui .skoda-login-wrapper .sign-in-form label {
+	display: none;
+}
+
+.aui .skoda-login-wrapper .sign-in-form input[type=text], .aui .skoda-login-wrapper .sign-in-form input[type=password] {
+	display: block;
+	width: 100%;
+	border: 0;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 35px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 0;
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.aui .skoda-login-wrapper .sign-in-form .btn {
+	display: block;
+    width: 100%;
+    height: 35px;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid #fff;
+}
+
+.aui .skoda-login-wrapper .sign-in-form .btn:hover {
+	background: rgba(0,0,0,0.6);
+}
+
+.skoda-login-wrapper .subtitle {
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.skoda-login-wrapper .subtitle a {
+	color: #fff;
+	text-decoration: underline;
+	margin-top: 20px;
+}

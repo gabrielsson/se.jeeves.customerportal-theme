@@ -3,6 +3,10 @@
 
 @import url(custom_common.css);
 @import url(color_schemes/seat.css);
+@import url(color_schemes/skoda.css);
+@import url(color_schemes/vcc.css);
+@import url(color_schemes/vct.css);
+@import url(color_schemes/dickson.css);
 
 $mainColor: #4DC10E;
 $darkMain: #46AA0C;
@@ -880,7 +884,7 @@ header {
 }
 
 .aui #navigation .navbar-inner .brand {
-	line-height: 50px;
+	line-height: 60px;
 	padding: 4px 15px 5px;
 }
 
@@ -921,8 +925,8 @@ header {
 
 /* Logo height and centering */
 .aui #navigation .navbar-inner .nav .logo {
-	line-height: 50px;
-	height: 50px;
+	line-height: 60px;
+	height: 60px;
 	margin-right: 5px;
 }
 
@@ -1163,6 +1167,7 @@ header {
 .aui .thumbnail .product-stock {
 	font-weight: 400;
 	font-size: 14px;
+	margin-bottom: 0;
 }
 
 .aui .thumbnail .product-description {
@@ -1181,7 +1186,6 @@ header {
 }
 
 .aui .thumbnail img {
-	max-height: 180px;
 	max-width: 100%;
 }
 
@@ -1337,4 +1341,29 @@ header {
 	margin: 0;
 	font-size: 1.2em;
 	line-height: 1.2em;
+}
+
+/**
+ * Some random form
+ */
+.aui #hrefFm {
+	margin: 0;
+}
+
+/**
+ * Footer
+ */
+
+#footer {
+	padding: 10px;
+}
+ 
+#footer .footer-left {
+	text-align: left;
+	float: left;
+}
+
+#footer .footer-right {
+	float: right;
+	text-align: right;
 }

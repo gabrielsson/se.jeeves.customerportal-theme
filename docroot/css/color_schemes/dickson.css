@@ -1,0 +1,107 @@
+/**
+ * Volvo Trucks styling
+ */
+$redColor: #DA0027;
+
+.aui body.dickson {
+	font-family: "Lucida Grande", "Lucida Sans", sans-serif;;
+}
+ 
+.aui .dickson a, .aui .dickson a:hover {
+	color: $redColor;
+}
+
+.aui .dickson .btn {
+	background: $redColor;
+	
+	background: #d90a20;
+    background: -moz-linear-gradient(top,#d90a20 0,#880326 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#d90a20),color-stop(100%,#880326));
+    background: -webkit-linear-gradient(top,#d90a20 0,#880326 100%);
+    background: -o-linear-gradient(top,#d90a20 0,#880326 100%);
+    background: -ms-linear-gradient(top,#d90a20 0,#880326 100%);
+    background: linear-gradient(to bottom,#d90a20 0,#880326 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d90a20',endColorstr='#880326',GradientType=0);
+	
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.aui .dickson .btn.btn-chevron:after {
+	font-size: 6px;
+	margin: 0;
+	margin-left: 10px;
+	color: #fff;
+	opacity: 0.7;
+	content: '\f054';
+	font-family: 'fontawesome-alloy';
+	text-decoration: inherit;
+    display: inline-block;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+.aui .dickson .btn:hover, .aui .btn:focus {
+	background: $redColor;
+	color: #fff;
+}
+
+.aui .dickson #navigation .nav li.active > a > span {
+	color: $redColor;
+}
+
+.aui .dickson #navigation .nav li.open > a {
+	color: $redColor;
+}
+
+.aui .dickson .navbar .nav > .active > a,
+.aui .dickson .navbar .nav > .active > a:hover,
+.aui .dickson .navbar .nav > .active > a:focus {
+	color: #fff;
+}
+
+.aui .dickson .navbar .nav > li > a:focus,
+.aui .dickson .navbar .nav > li > a:hover {
+	color: $redColor;
+}
+
+.aui .dickson #navigation .navbar-search input::-webkit-input-placeholder,
+.aui .dickson #navigation .navbar-search input:-moz-input-placeholder,
+.aui .dickson #navigation .navbar-search input::-moz-input-placeholder,
+.aui .dickson #navigation .navbar-search input:-ms-input-placeholder {
+	color: #ccc;
+}
+
+
+.aui .dickson .navbar .nav > .active > a,
+.aui .dickson .navbar .nav > .active > a:hover,
+.aui .dickson .navbar .nav > .active > a:focus,
+.aui .dickson .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .dickson .navbar .nav li.dropdown.active > .dropdown-toggle,
+.aui .dickson .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.aui .dickson .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover,
+.aui .dickson .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .dickson .navbar .nav li.dropdown.active > .dropdown-toggle {
+	color: $redColor;
+	color: $redColor;
+}
+
+.aui .dickson .dropdown-menu > li > a:hover,
+.aui .dickson .dropdown-menu > li > a:focus,
+.aui .dickson .dropdown-submenu:hover > a,
+.aui .dickson .dropdown-submenu:focus > a {
+	background-color: $redColor;
+}
+
+.aui .dickson #navigation .navbar-inner a.taglib-language-list-text {
+	color: $redColor;
+}
+
+.dickson .cart-portlet .icon-shopping-cart {
+	color: $redColor;
+}
+
+.volvo-trucks .user-bar {
+	background: #eceeef;
+}
