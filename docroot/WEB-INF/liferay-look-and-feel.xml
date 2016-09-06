@@ -27,5 +27,8 @@
 		<color-scheme id="05" name="Volvo Cars">
 			<css-class>volvo-cars</css-class>
 		</color-scheme>
+		<color-scheme id="06" name="Dickson">
+			<css-class>dickson</css-class>
+		</color-scheme>
 	</theme>
 </look-and-feel>

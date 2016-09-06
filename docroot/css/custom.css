@@ -3,9 +3,6 @@
 
 @import url(custom_common.css);
 @import url(color_schemes/seat.css);
-@import url(color_schemes/skoda.css);
-@import url(color_schemes/vct.css);
-@import url(color_schemes/vcc.css);
 
 $mainColor: #4DC10E;
 $darkMain: #46AA0C;
@@ -767,10 +764,6 @@ div#wrapper {
 .aui h1, .aui h2, .aui h3 {
 	color: #333;
 }
-
-.aui h3 {
-	line-height: 30px;
-}
  
 .aui a {
 	color: $mainColor;
@@ -788,7 +781,6 @@ div#wrapper {
 	border: none;
 	box-shadow: none;
 	padding: 4px 12px;
-	transition: background-color .2s ease-in-out;
 }
 
 .aui .btn:hover, .aui .btn-primary:hover, .aui .btn:active, .aui .btn-primary:active {
@@ -898,10 +890,6 @@ header {
 	text-transform: uppercase;
 }
 
-.aui #navigation .navbar-inner .nav > li {
-	height: 60px;
-}
-
 .aui #navigation .navbar-inner .nav li > a {
 	padding: 0 10px;
 }
@@ -933,7 +921,7 @@ header {
 
 /* Logo height and centering */
 .aui #navigation .navbar-inner .nav .logo {
-	line-height: 60px;
+	line-height: 50px;
 	height: 50px;
 	margin-right: 5px;
 }
