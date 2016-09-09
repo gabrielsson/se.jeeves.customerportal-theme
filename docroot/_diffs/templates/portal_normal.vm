@@ -34,9 +34,8 @@ $theme.include($body_top_include)
 	</header>
 
 	<div id="content">
-	
-		#if($is_signed_in)
-			<div class="user-bar">
+		<div class="user-bar">
+			#if($is_signed_in)
 				<div class="container">
 					<div class="row">
 				#if ($theme.isImpersonated())
@@ -58,8 +57,9 @@ $theme.include($body_top_include)
 					
 					</div>
 				</div>
-			</div>
-		#end
+			#end
+		</div>
+		
 		<nav id="breadcrumbs">
 			<div class="container">
 				#breadcrumbs()
