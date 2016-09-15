@@ -48,8 +48,14 @@ $blueColor: #003057;
 	color: #fff;
 }
 
+.aui #navigation .navbar-inner .nav li {
+	margin: 0 15px;
+}
+
+
+
 .aui .volvo-cars #navigation .navbar-inner .nav li > a {
-	padding: 0 15px;
+	padding: 0;
 	position: relative;
 }
 
@@ -60,19 +66,18 @@ $blueColor: #003057;
 }
 
 .aui .volvo-cars #navigation .nav li.active > a {
-	color: #517891;
+	color: #fff;
 }
 
 .aui .volvo-cars #navigation .nav li.active > a > span {
-	font-weight: bold;
-	color: #517891;
+	color: #fff;
 }
 
 .aui .volvo-cars #navigation .nav li.hover > a {
 	color: #fff;
 }
 
-.aui .volvo-cars #navigation .nav li.hover > a:after {
+.aui .volvo-cars #navigation .nav li.active > a:after {
 	content: '';
     width: 100%;
     position: absolute;

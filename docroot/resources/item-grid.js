@@ -1,9 +1,11 @@
     
     
+     
+    
     
 
 println('<div class="span3" style="overflow: hidden">');
-println('<div class="thumbnail" style="height: 460px;" >');
+println('<div class="thumbnail" style="height: 600px;" >');
 
 var pathList = itemDocumentUrlsMap.get(item.getItemNumber().toLowerCase());
 resourceUrl.setResourceID('itemDetails');
@@ -98,8 +100,3 @@ println('</div>'); // caption
 println('</div>'); // thumbnail
 
 println('</div>'); // span
-
-
-   
-    
-   

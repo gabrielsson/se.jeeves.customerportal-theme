@@ -1136,7 +1136,7 @@ header {
 }
 
 .aui .thumbnail .image-wrapper {
-	height: 180px;
+	/*height: 180px;*/
 	text-align: center;
 }
 
@@ -1172,6 +1172,7 @@ header {
 
 .aui .thumbnail .product-description {
 	font-size: 14px;
+	max-height: 140px;
 }
 
 .aui .thumbnail .product-add-to-cart {
