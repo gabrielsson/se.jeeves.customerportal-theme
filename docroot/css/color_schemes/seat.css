@@ -2,7 +2,21 @@
  * SEAT styling
  */
 $redColor: #D52A3A;
- 
+
+@font-face {
+	font-family: 'Seat Meta';
+	src: url(../SkodaPro-Normal.woff);
+}
+
+@font-face {
+	font-family: 'Seat Meta';
+	font-weight: bold;
+	src: url(../SkodaPro-Medium.woff);
+}
+
+.aui body.seat {
+	font-family: "Seat Meta", sans-serif;
+}
  
 .aui .seat a, .aui .seat a:hover {
 	color: $redColor;

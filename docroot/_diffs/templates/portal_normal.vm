@@ -78,14 +78,14 @@ $theme.include($body_top_include)
 		</div>
 	</div>
 
-	<footer id="footer">
-		#set ($VOID = $velocityPortletPreferences.setValue('groupId', $themeDisplay.getScopeGroupId().toString()))
-		#set ($VOID = $velocityPortletPreferences.setValue('articleId', $theme.getSetting('footer-article-id')))
-		#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
-		#set ($portlet_id = '56')
-		#set ($my_portlet_id = "${portlet_id}_INSTANCE_1234")
-		$theme.runtime($my_portlet_id, "", $velocityPortletPreferences.toString())
-		$velocityPortletPreferences.reset()
+	<footer id="footer" class="clearfix" role="contentinfo">
+		<div class="footer-left">
+			Brigo AB, Ruskvädersgatan 6, 418 34, Göteborg, Sweden
+		</div>
+		
+		<div class="footer-right">
+			Telephone: +46(0)31 89 18 00, Telefax: +46(0)31 89 18 01, E-mail: info@brigo.se
+		</div>
 	</footer>
 </div>
 
