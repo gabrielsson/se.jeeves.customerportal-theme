@@ -30,5 +30,8 @@
 		<color-scheme id="06" name="Dickson">
 			<css-class>dickson</css-class>
 		</color-scheme>
+		<color-scheme id="07" name="Renault">
+			<css-class>renault</css-class>
+		</color-scheme>
 	</theme>
 </look-and-feel>

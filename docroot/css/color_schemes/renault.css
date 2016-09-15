@@ -1,0 +1,180 @@
+/**
+ * SEAT styling
+ */
+$yellowColor: #fc3;
+$darkYellow: #EAAF00;
+
+@font-face {
+	font-family: 'Renault';
+	src: url(../RenaultLife-Regular.woff);
+}
+
+@font-face {
+	font-family: 'Renault';
+	font-weight: bold;
+	src: url(../RenaultLife-Bold.woff);
+}
+
+.aui body.renault {
+	font-family: "Renault", sans-serif;
+}
+ 
+.aui .renault a, .aui .renault a:hover {
+	color: $yellowColor;
+}
+
+.aui .renault .btn {
+	background: $yellowColor;
+	color: #000;
+}
+
+.aui .renault .btn:hover, .aui .btn:focus {
+	background: $darkYellow;
+	color: #000;
+}
+
+.aui .renault input[type="text"], .aui .renault textarea {
+	background: #E8E8E8;
+	border-radius: 2px;
+	border: 0;
+}
+
+.aui .renault input[type="text"]:disabled, .aui .renault select:disabled {
+	background: #fafafa;
+	color: #aaa;
+	border: 0;
+}
+
+.aui .renault .input-append input[type="text"] {
+	padding: 4px 6px;
+}
+ 
+.renault header {
+	background: #fff;
+}
+
+.aui .renault #navigation .navbar-inner .nav .logo {
+	line-height: 60px;
+	height: 60px;
+}
+
+.aui .renault #navigation .navbar-inner .nav .logo img {
+	height: 100%;
+}
+
+/*.aui #navigation .navbar-inner .brand {
+	line-height: 60px;
+	margin-right: 20px;
+	padding: 0;
+}
+
+.aui #navigation .navbar-inner .brand img {
+	height: 57px;
+}*/
+
+.aui .renault #navigation .navbar-inner li {
+	margin-right: 5px;
+}
+
+.aui .renault #navigation .navbar-inner li > a {
+	color: #333;
+}
+
+.aui .renault #navigation .navbar-inner li > a > span {
+	font-size: 12px;
+}
+
+.aui .renault #navigation .nav li.active > a,
+.aui .renault #navigation .nav li.open > a {
+	color: $yellowColor;	
+}
+
+.aui .renault .navbar .nav > .active > a,
+.aui .renault .navbar .nav > .active > a:hover,
+.aui .renault .navbar .nav > .active > a:focus {
+	color: $yellowColor;
+}
+
+.aui .renault .navbar .nav > li > a:focus,
+.aui .renault .navbar .nav > li > a:hover {
+	color: $yellowColor;
+}
+
+.aui .renault #navigation .dropdown-menu li > a,
+.aui .renault #navigation .dropdown-menu li.active > a,
+.aui .renault #navigation .dropdown-menu li.open > a {
+	color: #fff;
+}
+
+.aui .renault #navigation .navbar-search .search-wrapper .input-append {
+	border: 0;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.aui .renault #navigation .navbar-search .search-wrapper .btn {
+	color: $yellowColor;
+	background: #E8E8E8;
+}
+
+.aui .renault #navigation .navbar-search .search-wrapper input {
+	color: #999;
+	background: #E8E8E8;
+	padding: 4px 6px;
+}
+
+.aui .renault #navigation .navbar-search input::-webkit-input-placeholder,
+.aui .renault #navigation .navbar-search input:-moz-input-placeholder,
+.aui .renault #navigation .navbar-search input::-moz-input-placeholder,
+.aui .renault #navigation .navbar-search input:-ms-input-placeholder {
+	color: #ccc;
+}
+
+
+.aui .renault .navbar .nav > .active > a,
+.aui .renault .navbar .nav > .active > a:hover,
+.aui .renault .navbar .nav > .active > a:focus,
+.aui .renault .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .renault .navbar .nav li.dropdown.active > .dropdown-toggle,
+.aui .renault .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.aui .renault .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover,
+.aui .renault .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .renault .navbar .nav li.dropdown.active > .dropdown-toggle {
+	color: $yellowColor;
+}
+
+.aui .renault .dropdown-menu > li > a:hover,
+.aui .renault .dropdown-menu > li > a:focus,
+.aui .renault .dropdown-submenu:hover > a,
+.aui .renault .dropdown-submenu:focus > a {
+	background-color: $yellowColor;
+}
+
+.aui .renault #navigation .navbar-inner a.taglib-language-list-text {
+	color: $yellowColor;
+}
+
+.renault .cart-portlet .icon-shopping-cart {
+	color: $yellowColor;
+	margin-right: 5px;
+}
+
+.aui .renault .single-product .price {
+	background: $yellowColor;
+}
+
+.aui .renault #navigation .navbar-inner .taglib-language-list-text {
+	color: #000;
+}
+
+.aui .renault .user-bar {
+	background: #eee;
+}
+
+.aui .renault .user-bar a {
+	color: $darkYellow;
+}
+
+.aui .renault .user-bar .btn {
+	color: #000;
+}
