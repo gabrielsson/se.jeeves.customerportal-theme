@@ -34,37 +34,46 @@ $theme.include($body_top_include)
 	</header>
 
 	<div id="content">
+		#if ($is_signed_in)
 		<div class="user-bar">
-			#if($is_signed_in)
-				<div class="container">
-					<div class="row">
-				#if ($theme.isImpersonated())
-					<b class="alert-icon icon-warning-sign"></b>
-				#end	
-				
-	
-						<div class="span6 user-full-name">
-							<span class="name-wrapper"><i class="icon-user"></i> $user.getFullName()</span>
-							<a class="" href="/c/portal/logout" title="Sign Out"><span class="nav-item-label"> Sign Out </span> </a>
-						</div>
-						<div class="span6 cart-portlet">
-							#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
-							#set ($instanceId = $group_id + 'aaaaaaaaaaaa')
-							#set ($myPortletId = "customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_${instanceId.substring(0, 12)}")
-							$theme.runtime($myPortletId, '', $velocityPortletPreferences.toString())
-							#set ($VOID = $velocityPortletPreferences.reset())			
-						</div>
-					
-					</div>
-				</div>
-			#end
+			<div class="container">
+				<div class="row">
+			#if ($theme.isImpersonated())
+				<b class="alert-icon icon-warning-sign"></b>
+			#end	
+			
+
+			<div class="span6 user-full-name">
+				<span class="name-wrapper"><i class="icon-user"></i> $user.getFullName()</span>
+				<a class="" href="/c/portal/logout" title="Sign Out"><span class="nav-item-label"> Sign Out </span> </a>
+			</div>
+			<!--<div class="span4">
+				#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))	
+				#set ($searchPortletId = "customerportalsearch_WAR_sejeevescustomerportalportletscommonportlet")
+				$theme.runtime($searchPortletId, '', $velocityPortletPreferences.toString())
+				#set ($VOID = $velocityPortletPreferences.reset())
+			</div>-->
+			<div class="span6 cart-portlet">
+				#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
+				#set ($instanceId = $group_id + 'aaaaaaaaaaaa')
+				#set ($myPortletId = "customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_${instanceId.substring(0, 12)}")
+				$theme.runtime($myPortletId, '', $velocityPortletPreferences.toString())
+				#set ($VOID = $velocityPortletPreferences.reset())			
+			</div>
+			<!--<div class="span6 cart-portlet" id="yui_patched_v3_11_0_1_1467901006599_434"> <div class="portlet-boundary portlet-boundary_customerportalcart_WAR_sejeevescustomerportalcartportlet_ portlet-static portlet-static-end portlet-borderless customerportal-cart " id="p_p_id_customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_"> <span id="p_customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa"></span> <div class="portlet-borderless-container" style="" id="yui_patched_v3_11_0_1_1467901006599_433"> <div class="portlet-body" id="yui_patched_v3_11_0_1_1467901006599_431"> <b class="icon-large icon-shopping-cart"></b> Din kundvagn (1), 149.94 SEK <a href="http://localhost:8080/web/guest/cart" class="btn">CHECKOUT</a> <script>function _customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_popupRemove(a){window._customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_LiferayDialogWindowPopUP=null;AUI().use("aui-base","aui-io-plugin-deprecated","liferay-util-window",function(b){_customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_LiferayDialogWindowPopUP=Liferay.Util.Window.getWindow({dialog:{centered:true,constrain2view:true,modal:true,resizable:false,destroyOnHide:true,width:300,height:200,after:{destroy:function(c){console.log("function which  will call after close the dialog")},},}}).plug(b.Plugin.IO,{autoLoad:false}).render();window._customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_LiferayDialogWindowPopUP.show();window._customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_LiferayDialogWindowPopUP.titleNode.html("Varning!");window._customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_LiferayDialogWindowPopUP.io.set("uri",a);window._customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_LiferayDialogWindowPopUP.io.set("id","_customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_popUpDialog");window._customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_aaaaaaaaaaaa_LiferayDialogWindowPopUP.io.start()})}AUI().use("aui-datepicker",function(a){var b=a.all(".newDatePicker");b.each(function(c){var d=new a.DatePicker({container:c,mask:c.getData("dateformat"),setValue:true,popover:{zIndex:1},calendar:{on:{dateClick:function(e){c.value=a.Date.format(e.date);c.ancestor("form").submit()}}}})})});</script> </div> </div> </div> </div>-->
+			</div>
+			</div>
 		</div>
+		#end
 		
+		#if ($is_signed_in)
 		<nav id="breadcrumbs">
 			<div class="container">
 				#breadcrumbs()
 			</div>
 		</nav>
+		#end
+		
 		<div class="container">
 			#if ($selectable)
 				$theme.include($content_include)
