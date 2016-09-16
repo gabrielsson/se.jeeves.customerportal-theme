@@ -7,7 +7,7 @@
 	</compatibility>
 	<theme id="se.jeeves.customerportal" name="Customer Portal Theme">
 		<settings>
-			<setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="true"></setting>
+			<setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="false"></setting>
 			<setting configurable="true" key="footer-article-id" value=""></setting>
 		</settings>
 		
