@@ -2,8 +2,7 @@
 @import "mixins";
 
 @import url(custom_common.css);
-@import url(color_schemes/seat.css);
-
+@import url(color_schemes/jeeves.css);
 $mainColor: #4DC10E;
 $darkMain: #46AA0C;
 

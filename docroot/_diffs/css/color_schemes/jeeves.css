@@ -1,0 +1,218 @@
+$blueColor: #3473c2;
+$darkMain: #1270E3;
+$TableText:#555;
+
+
+.aui .jeeves a {
+	color: $TableText;
+}
+
+.aui .jeeves a:hover {
+	color: $TableText;
+}
+
+
+.aui .jeeves .btn {
+	background: $blueColor;
+	color: #fff;
+}
+
+.aui .jeeves .btn:hover, .aui .btn:focus {
+	background: #1270E3;
+	color: #fff;
+}
+
+.aui .jeeves input[type="text"], .aui .jeeves textarea {
+/* 	background: #E8E8E8; */
+	border-radius: 2px;
+	border: 1;
+}
+
+.aui .jeeves input[type="text"]:disabled, .aui .jeeves select:disabled {
+	background: #fafafa;
+	color: #aaa;
+	border: 0;
+}
+
+.aui .jeeves .input-append input[type="text"] {
+	padding: 4px 6px;
+}
+ 
+.jeeves header {
+	background: #000;
+	color: #ffff;
+}
+
+.aui .jeeves #navigation .navbar-inner .nav .logo {
+	line-height: 60px;
+	height: 60px;
+}
+
+.aui .jeeves #navigation .navbar-inner .nav .logo img {
+	height: 100%;
+}
+
+/*.aui #navigation .navbar-inner .brand {
+	line-height: 60px;
+	margin-right: 20px;
+	padding: 0;
+}
+
+.aui #navigation .navbar-inner .brand img {
+	height: 57px;
+}*/
+
+.aui .jeeves #navigation .navbar-inner li {
+	margin-right: 5px;
+}
+
+.aui .jeeves #navigation .navbar-inner li > a {
+	color: #fff;
+}
+
+.aui .jeeves #navigation .navbar-inner li > a > span {
+	font-size: 12px;
+}
+
+.aui .jeeves #navigation .nav li.active > a,
+.aui .jeeves #navigation .nav li.open > a {
+	color: $blueColor;	
+}
+
+.aui .jeeves .navbar .nav > .active > a,
+.aui .jeeves .navbar .nav > .active > a:hover,
+.aui .jeeves .navbar .nav > .active > a:focus {
+	color: $blueColor;
+}
+
+.aui .jeeves .navbar .nav > li > a:focus,
+.aui .jeeves .navbar .nav > li > a:hover {
+	color: $blueColor;
+}
+
+.aui .jeeves #navigation .dropdown-menu li > a,
+.aui .jeeves #navigation .dropdown-menu li.active > a,
+.aui .jeeves #navigation .dropdown-menu li.open > a {
+	color: #fff;
+}
+
+.aui .jeeves #navigation .navbar-search .search-wrapper .input-append {
+	border: 0;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.aui .jeeves #navigation .navbar-search .search-wrapper .btn {
+	color: $blueColor;
+	background: #E8E8E8;
+}
+
+.aui .jeeves #navigation .navbar-search .search-wrapper input {
+	color: #999;
+	background: #E8E8E8;
+	padding: 4px 6px;
+}
+
+.aui .jeeves #navigation .navbar-search input::-webkit-input-placeholder,
+.aui .jeeves #navigation .navbar-search input:-moz-input-placeholder,
+.aui .jeeves #navigation .navbar-search input::-moz-input-placeholder,
+.aui .jeeves #navigation .navbar-search input:-ms-input-placeholder {
+	color: #ccc;
+}
+
+
+.aui .jeeves .navbar .nav > .active > a,
+.aui .jeeves .navbar .nav > .active > a:hover,
+.aui .jeeves .navbar .nav > .active > a:focus,
+.aui .jeeves .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .jeeves .navbar .nav li.dropdown.active > .dropdown-toggle,
+.aui .jeeves .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.aui .jeeves .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover,
+.aui .jeeves .navbar .nav > li.open > a, .aui .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .jeeves .navbar .nav li.dropdown.active > .dropdown-toggle {
+	color: $blueColor;
+}
+
+.aui .jeeves .dropdown-menu > li > a:hover,
+.aui .jeeves .dropdown-menu > li > a:focus,
+.aui .jeeves .dropdown-submenu:hover > a,
+.aui .jeeves .dropdown-submenu:focus > a {
+	background-color: $blueColor;
+}
+
+.aui .jeeves #navigation .navbar-inner a.taglib-language-list-text {
+	color: $blueColor;
+}
+
+.jeeves .cart-portlet .icon-shopping-cart {
+	color: $blueColor;
+	margin-right: 5px;
+}
+
+.aui .jeeves .single-product .price {
+	background: $blueColor;
+}
+
+.aui .jeeves #navigation .navbar-inner .taglib-language-list-text {
+	color: #000;
+}
+
+
+/* diff*/
+.aui .jeeves #navigation .navbar-search .search-wrapper input {
+	margin: 0;
+/*	background: none; */
+	color: #999;
+	border: 0;
+	font-size: 13px;
+	width: 100px;
+}
+
+.aui .jeeves .table-striped tbody > tr:nth-child(odd) > td,.aui .jeeves .table-striped tbody > tr:nth-child(even) > td{
+	background-color: #FFFFFF;
+}
+
+
+.aui .jeeves .table-striped tbody > tr:first-child > td, .aui .jeeves .table-striped tbody > tr:first-child > th {
+	background-color: #E6E6E6;
+}
+
+
+.jeeves .portlet-login .navigation{
+   background: #fff;
+}
+
+.aui .jeeves .thumbnail {
+	 background: #fff;
+}
+
+.jeeves #userListGrid a,.jeeves #userListTable a{
+	color:$blueColor;
+}
+
+
+
+.aui .jeeves .btn:hover, .aui .jeeves .btn-primary:hover, .aui .jeeves .btn:active, .aui .jeeves .btn-primary:active {
+	background: $darkMain;
+	color: #fff;
+}
+
+.aui .jeeves .btn.dropdown-toggle{
+		background: #3473c2;
+/* 	background: #E8E8E8; */
+	color: #fff;
+	
+}
+
+.aui .jeeves #navigation .navbar-search .search-wrapper input {
+	margin: 0;
+	color: #999;
+	border: 0;
+	font-size: 13px;
+	width: 100px;
+}
+
+.aui .jeeves .btn-group.open .btn.dropdown-toggle {
+	background: $blueColor;
+	
+}

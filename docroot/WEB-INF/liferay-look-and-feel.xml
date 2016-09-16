@@ -11,24 +11,9 @@
 			<setting configurable="true" key="footer-article-id" value=""></setting>
 		</settings>
 		
-		<color-scheme id="01" name="Normal">
+		<color-scheme id="01" name="Jeeves">
 			<default-cs>true</default-cs>
-			<css-class>default</css-class>
-		</color-scheme>
-		<color-scheme id="02" name="SEAT">
-			<css-class>seat</css-class>
-		</color-scheme>
-		<color-scheme id="03" name="Skoda">
-			<css-class>skoda</css-class>
-		</color-scheme>
-		<color-scheme id="04" name="Volvo Trucks">
-			<css-class>volvo-trucks</css-class>
-		</color-scheme>
-		<color-scheme id="05" name="Volvo Cars">
-			<css-class>volvo-cars</css-class>
-		</color-scheme>
-		<color-scheme id="06" name="Dickson">
-			<css-class>dickson</css-class>
+			<css-class>jeeves</css-class>
 		</color-scheme>
 	</theme>
 </look-and-feel>
