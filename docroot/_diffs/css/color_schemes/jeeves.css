@@ -154,7 +154,7 @@ $TableText:#555;
 }
 
 .aui .jeeves #navigation .navbar-inner .taglib-language-list-text {
-	color: #000;
+	color: #fff;
 }
 
 
@@ -215,4 +215,16 @@ $TableText:#555;
 .aui .jeeves .btn-group.open .btn.dropdown-toggle {
 	background: $blueColor;
 	
+}
+
+.aui .jeeves .btn .caret {
+	border-top-color: #fff;
+}
+
+.aui .jeeves button.close, .aui .jeeves button.btn.close {
+	color : $blueColor;
+}
+
+.jeeves .portlet-back a{
+	color : #fff;
 }
