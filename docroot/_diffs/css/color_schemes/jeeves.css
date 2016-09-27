@@ -184,6 +184,7 @@ $TableText:#555;
 
 .aui .jeeves .thumbnail {
 	 background: #fff;
+	 box-shadow: 2px 2px 15px;
 }
 
 .jeeves #userListGrid a,.jeeves #userListTable a{
