@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "brigo";
+  src:url("icon/brigo.eot");
+  src:url("icon/brigo.eot?#iefix") format("embedded-opentype"),
+    url("icon/brigo.woff") format("woff"),
+    url("icon/brigo.ttf") format("truetype"),
+    url("icon/brigo.svg#brigo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "brigo" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="brigo-"]:before,
+[class*=" brigo-"]:before,
+.seat .cart-portlet .icon-shopping-cart:before,
+.seat .icon-trash:before,
+.seat .icon-folder-open:before {
+  font-family: "brigo" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+
+.brigo-cart:before,
+.seat .cart-portlet .icon-shopping-cart:before {
+  content: "\61";
+}
+
+.brigo-folder:before,
+.seat .icon-folder-open:before {
+  content: "\62";
+}
+
+.brigo-trash:before,
+.seat .icon-trash:before {
+  content: "\63";
+}

@@ -1,6 +1,7 @@
 @import "compass";
 @import "mixins";
 
+@import url(font.css);
 @import url(custom_common.css);
 @import url(color_schemes/seat.css);
 @import url(color_schemes/skoda.css);
@@ -1137,8 +1138,13 @@ header {
 }
 
 .aui .thumbnail .image-wrapper {
-	/*height: 180px;*/
+	height: 270px;
 	text-align: center;
+}
+
+.aui .thumbnail .image-wrapper img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .aui .thumbnail .product-price {
@@ -1368,4 +1374,38 @@ header {
 #footer .footer-right {
 	float: right;
 	text-align: right;
+}
+
+/**
+ * Request form
+ */
+.aui .web-form-portlet .control-group {
+	width: 50%;
+	float: left;
+	padding-right: 25px;
+	box-sizing: border-box;
+}
+
+.aui .web-form-portlet .control-group input,
+.aui .web-form-portlet .control-group select {
+	width: 100%;
+}
+
+.aui .web-form-portlet .taglib-captcha {
+	float: left;
+}
+
+.aui .web-form-portlet .taglib-captcha .control-group {
+	width: auto;
+	float: none;
+	padding-right: 0;
+}
+
+.aui .web-form-portlet .btn {
+	float: left;
+	clear: both;
+}
+
+.aui .web-form-portlet legend {
+	padding-top: 10px;
 }
