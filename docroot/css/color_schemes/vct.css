@@ -40,9 +40,15 @@ $extraLight: #F9FAFB;
 }
 
 .aui .volvo-trucks input[type="text"], .aui .volvo-trucks textarea {
-	background: $grayBlue;
+	/*background: $grayBlue;*/
+	background: transparent;
+	border: 1px solid #ccc;
 	border-radius: 2px;
-	border: 0;
+}
+
+.aui .volvo-trucks input[type="text"]:focus,
+.aui .volvo-trucks textarea:focus {
+	border-color: $blueColor;
 }
 
 .aui .volvo-trucks input[type="text"]:disabled, .aui .volvo-trucks select:disabled {
@@ -52,7 +58,7 @@ $extraLight: #F9FAFB;
 }
 
 .aui .volvo-trucks .input-append input[type="text"] {
-	padding: 4px 6px;
+	padding: 3px 6px;
 }
  
 .volvo-trucks header {
