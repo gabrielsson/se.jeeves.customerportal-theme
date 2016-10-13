@@ -45,7 +45,7 @@ $theme.include($body_top_include)
 	
 						<div class="span6 user-full-name">
 							<span class="name-wrapper"><i class="icon-user"></i> $user.getFullName()</span>
-							<a class="" href="/c/portal/logout" title="Sign Out"><span class="nav-item-label"> Sign Out </span> </a>
+							<a class="" href="/c/portal/logout" title="#language ("sign-out")"><span class="nav-item-label"> #language ("sign-out")</span> </a>
 						</div>
 						<div class="span6 cart-portlet">
 							#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
