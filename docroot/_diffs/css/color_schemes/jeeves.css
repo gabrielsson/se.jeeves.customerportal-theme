@@ -229,3 +229,8 @@ $TableText:#555;
 .jeeves .portlet-back a{
 	color : #fff;
 }
+
+.loading-animation-cart{
+               background: url(../../images/progress_bar/loading_animation.gif) no-repeat top center;
+               z-index: 999;
+}
