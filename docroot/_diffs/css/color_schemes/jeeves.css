@@ -234,3 +234,7 @@ $TableText:#555;
                background: url(../../images/progress_bar/loading_animation.gif) no-repeat top center;
                z-index: 999;
 }
+
+.jeeves-table {
+white-space: nowrap;
+}
