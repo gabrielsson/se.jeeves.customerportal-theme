@@ -33,9 +33,11 @@ $theme.include($body_top_include)
      #end
 #end
 
+
 #if($hasPermission == true)
 	#dockbar()
 #end
+
 
 <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">
@@ -53,24 +55,30 @@ $theme.include($body_top_include)
 			#if($is_signed_in)
 				<div class="container">
 					<div class="row">
-				#if ($theme.isImpersonated())
-					<b class="alert-icon icon-warning-sign"></b>
-				#end	
+						#if ($theme.isImpersonated())
+							<b class="alert-icon icon-warning-sign"></b>
+						#end	
 				
-	
 						<div class="span6 user-full-name">
-							<span class="name-wrapper"><i class="icon-user"></i> $user.getFullName()</span>
-							<a class="" href="/c/portal/logout" title="#language ("sign-out")"><span class="nav-item-label"> #language ("sign-out")</span> </a>
+							#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
+							#set ($instanceId = $group_id + 'bbbbbbbbbbbbb')
+							#set ($myPortletId = "customerportaluserimpersonaterevert_WAR_sejeevescustomerportaluserimpersonateportlet_INSTANCE_${instanceId.substring(0, 12)}")
+							$theme.runtime($myPortletId, '', $velocityPortletPreferences.toString())
+							#set ($VOID = $velocityPortletPreferences.reset())	
 						</div>
-						<div class="span6 cart-portlet">
+						<div class="span5 cart-portlet">
 							#set ($VOID = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
 							#set ($instanceId = $group_id + 'aaaaaaaaaaaa')
 							#set ($myPortletId = "customerportalcart_WAR_sejeevescustomerportalcartportlet_INSTANCE_${instanceId.substring(0, 12)}")
 							$theme.runtime($myPortletId, '', $velocityPortletPreferences.toString())
-							#set ($VOID = $velocityPortletPreferences.reset())			
+							#set ($VOID = $velocityPortletPreferences.reset())	
 						</div>
-					
+						<div class="span1 user-full-name">
+								<a class="name-wrapper" href="/c/portal/logout" title="#language ("sign-out")"><span class="nav-item-label"> #language ("sign-out")</span> </a>		
+						</div>
+						
 					</div>
+					
 				</div>
 			#end
 		</div>
